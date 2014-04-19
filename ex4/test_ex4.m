@@ -18,4 +18,3 @@
 %!test test_nnCostFunction_gradReg()
 
 %!test test_nnCostFunction_gradCheck(3)
->>>>>>> 2faf06ae30d0d40df3d76330e2bc73a3dd7f6d04
