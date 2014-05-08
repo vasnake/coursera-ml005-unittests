@@ -4,7 +4,7 @@ function test_nnCostFunction_gradNoReg()
     % https://class.coursera.org/ml-005/forum/thread?thread_id=1783
     % Assignment #4, NN cost function, backprop, gradient w/o regularization
     [J grad] = nnCostFunction(sec(1:1:32)', 2, 4, 4, reshape(tan(1:32), 16, 2) / 5, 1 + mod(1:16,4)', 0);
-    a = [   3.0518e-001
+    a = [ 3.0518e-001
             7.1044e-002
             5.1307e-002
             6.2115e-001
