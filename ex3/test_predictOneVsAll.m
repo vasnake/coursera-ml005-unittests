@@ -35,4 +35,10 @@ function test_predictOneVsAll ()
   p = predictOneVsAll(all_theta, [0 1 2 2 1 0 3 4 5 5 4 3]');
   assert(p, [1 1 1 1 1 1 2 2 2 2 2 2]');
 
+  % https://class.coursera.org/ml-005/forum/thread?thread_id=1886#post-8222
+  all_theta = [-0.7 0.5 -0.3 0.3;-0.7 -0.3 0.5 0.3;-0.7 -0.3 -0.3 -0.5];
+  X = [1 0 0;0 1 0;0 0 -1];
+  p = predictOneVsAll(all_theta, X);
+  assert(p, [1 2 3]');
+
 endfunction
