@@ -3,6 +3,15 @@ function test_computeCentroids()
 
     epsilon = 1e-4;
 
+    % one dimensional test that easily can be calculated by hand
+    X = [-5; -2; 0; 2; 6; 8; 10];
+    idx = [1; 1; 1; 1; 2; 2; 2];
+    K = 2;
+    centroids = computeCentroids(X, idx, K);
+    a = [-1.25
+        8];
+    assert(centroids, a, epsilon);
+
     X = reshape(cos(1:30), 15, 2);
     idx = (1 + mod(1:15, 3))';
     K = 3;
